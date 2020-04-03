@@ -83,7 +83,7 @@ def admin_panel(request):
         messages.error(
             request, "You Don't Have The Required Permissions", extra_tags="alert"
         )
-        return redirect("home")
+        return redirect("index")
 
 
 def change_staff_access(request, pk):
@@ -102,4 +102,4 @@ def change_staff_access(request, pk):
         messages.error(
             request, "You Don't Have The Required Permissions", extra_tags="alert"
         )
-        return redirect("home")
+        return redirect("index")
